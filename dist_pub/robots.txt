@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exepesspet.brixly.com.br/sitemap.xml

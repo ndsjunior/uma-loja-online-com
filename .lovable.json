@@ -1,0 +1,29 @@
+{
+  "id": "f1898973",
+  "name": "Uma loja online com",
+  "description": "Uma loja online com vitrine de produtos em grade (foto, nome, preço), filtro por categoria e busca, página de produto com galeria, variações (tamanho/cor) e botão adicionar ao carrinho, carrinho lateral (drawer) com ajuste de quantidade e subtotal, e uma página de checkout com resumo do pedido. Produtos de exemplo. https://www.petz.com.br/?gad_source=1&gad_campaignid=24301562615&gclid=CjwKCAjww-3VBhAcEiwAwUUIu86E0k-RzeHTmQ_VbItGsNRVEpIRgjZotH2JGyna2BUcXYIzt79NKRoCzeAQAvD_BwE  faca de acordo com este link",
+  "style": "cinema3d",
+  "kind": "",
+  "owner": 153,
+  "created_at": "2026-09-29T20:56:01.992575",
+  "updated_at": "2026-09-30T15:58:36.548280",
+  "session_id": null,
+  "chats": [
+    {
+      "id": "1",
+      "title": "Chat 1",
+      "created_at": "2026-09-29T20:56:01.992575",
+      "session_id": "522c9c95-4768-4161-b88d-d6f6dc1bf8b0",
+      "session_account": "A"
+    }
+  ],
+  "active_chat": "1",
+  "nuvem": {
+    "em": 1793013033.032133,
+    "bytes": 77169343,
+    "fonte_bytes": 78595784,
+    "partes": 0,
+    "meta_hash": "02fcc4f1ef0f5702"
+  },
+  "app_slug": "exepesspet"
+}

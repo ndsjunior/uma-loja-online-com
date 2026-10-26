@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Express Pet · Loja online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link id="brx-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function(){
+        function isExtensionNoise(message, stack, filename){
+          var text = String(message||'') + ' ' + String(stack||'') + ' ' + String(filename||'');
+          return /chrome-extension:\/\/|moz-extension:\/\/|MetaMask|inpage\.js|ethereum/i.test(text);
+        }
+        function send(message, stack, filename){
+          if (isExtensionNoise(message, stack, filename)) return;
+          try{ parent.postMessage({__forge:true, type:'forge-error', message:String(message||'erro'), stack:String(stack||'')}, '*'); }catch(e){}
+        }
+        window.addEventListener('error', function(e){ send(e.message, e.error && e.error.stack, e.filename); }, true);
+        window.addEventListener('unhandledrejection', function(e){
+          var r=e.reason;
+          if (isExtensionNoise(r && (r.message||r), r && r.stack)) { e.preventDefault(); return; }
+          send(r && (r.message||r), r && r.stack);
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
